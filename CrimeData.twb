@@ -1,0 +1,772 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Preprocessed_Crime_Data' inline='true' name='federated.04fqh750wxz4x719dvse01aw36xy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Preprocessed_Crime_Data' name='textscan.1plkzpj08m8wwn138l14g0gph4wy'>
+            <connection class='textscan' directory='D:/Project/CrimeData' filename='Preprocessed_Crime_Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1plkzpj08m8wwn138l14g0gph4wy' name='Preprocessed_Crime_Data.csv' table='[Preprocessed_Crime_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='datetime' name='Date' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Primary Type' ordinal='3' />
+            <column datatype='string' name='Description' ordinal='4' />
+            <column datatype='integer' name='District' ordinal='5' />
+            <column datatype='string' name='Location Description' ordinal='6' />
+            <column datatype='boolean' name='Arrest' ordinal='7' />
+            <column datatype='boolean' name='Domestic' ordinal='8' />
+            <column datatype='real' name='Latitude' ordinal='9' />
+            <column datatype='real' name='Longitude' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary Type]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Primary Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Description]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Location Description</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrest</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Arrest]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Arrest</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domestic</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Domestic]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Domestic</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Preprocessed_Crime_Data.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Preprocessed_Crime_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/RAGUPA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_15kvzc00f5rg4c18jz30v10q39k7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/23/2024 03:58:09 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>549999</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>215709</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Primary Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Primary Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Primary Type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>810</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>District</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location Description</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>486</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrest</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Arrest]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrest</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Domestic</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Domestic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Domestic</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160918</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Preprocessed_Crime_Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>159727</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Preprocessed_Crime_Data.csv' id='Preprocessed_Crime_Data.csv_2885EB29A7A64FD0B23C29AE26C22154'>
+            <properties context=''>
+              <relation connection='textscan.1plkzpj08m8wwn138l14g0gph4wy' name='Preprocessed_Crime_Data.csv' table='[Preprocessed_Crime_Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='datetime' name='Date' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='string' name='Primary Type' ordinal='3' />
+                  <column datatype='string' name='Description' ordinal='4' />
+                  <column datatype='integer' name='District' ordinal='5' />
+                  <column datatype='string' name='Location Description' ordinal='6' />
+                  <column datatype='boolean' name='Arrest' ordinal='7' />
+                  <column datatype='boolean' name='Domestic' ordinal='8' />
+                  <column datatype='real' name='Latitude' ordinal='9' />
+                  <column datatype='real' name='Longitude' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Month Filter'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Crime Trend Over Month:</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Preprocessed_Crime_Data' name='federated.04fqh750wxz4x719dvse01aw36xy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04fqh750wxz4x719dvse01aw36xy'>
+            <column datatype='datetime' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Primary Type]' role='dimension' type='nominal' />
+            <column-instance column='[Primary Type]' derivation='Count' name='[cnt:Primary Type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.04fqh750wxz4x719dvse01aw36xy].[mn:Date:ok]' value='85' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04fqh750wxz4x719dvse01aw36xy].[cnt:Primary Type:qk]</rows>
+        <cols>[federated.04fqh750wxz4x719dvse01aw36xy].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{93FC8BC1-5F44-4C2D-BF29-2C64EE7ADC43}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Crime Trend Over Year:</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Preprocessed_Crime_Data' name='federated.04fqh750wxz4x719dvse01aw36xy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04fqh750wxz4x719dvse01aw36xy'>
+            <column datatype='datetime' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Primary Type]' role='dimension' type='nominal' />
+            <column-instance column='[Primary Type]' derivation='Count' name='[cnt:Primary Type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.04fqh750wxz4x719dvse01aw36xy].[cnt:Primary Type:qk]</rows>
+        <cols>[federated.04fqh750wxz4x719dvse01aw36xy].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{CB14AACC-27A1-48A0-966E-E22477A85B42}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Month Filter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04fqh750wxz4x719dvse01aw36xy].[mn:Date:ok]</field>
+            <field>[federated.04fqh750wxz4x719dvse01aw36xy].[none:Primary Type:nk]</field>
+            <field>[federated.04fqh750wxz4x719dvse01aw36xy].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{687785F5-652C-45A1-8074-4F26E7A2432F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04fqh750wxz4x719dvse01aw36xy].[none:Primary Type:nk]</field>
+            <field>[federated.04fqh750wxz4x719dvse01aw36xy].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{587CC312-037D-4EF7-B6B6-EECF5032B7EF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Month Filter' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      O0yctqLnHwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
